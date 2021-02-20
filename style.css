@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ヘッダー部分 */
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #ec715f;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 70px;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.nav-list {
+  width: 120px;
+  list-style: none;
+  float: left;
+  padding: 0 30px;
+  color: #fafafa;
+  font-size: 16px;
+  line-height: 70px;
+}
+
+.nav-list a {
+  color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* メインビジュアル部分 */
+
+#mv {
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+  text-align: center;
+}
+
+.mv-title {
+  color: #fafafa;
+  padding-top: 200px;
+  font-size: 64px;
+}
+
+.mv-text {
+  color: #fafafa;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+/* Section Portfolio */
+
+#portfolio {
+  background-color: #eceff1;
+}
+
+.heading {
+  padding-top: 90px;
+  text-align: center;
+  font-size: 32px;
+  color: #000000;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 70px;
+  background-color: #ec715f;
+  margin: 8px auto 0 auto;
+}
+
+.heading-text {
+  font-size: 16px;
+  padding-top: 30px;
+  color: #000000;
+  text-align: center;
+}
+
+.production-group {
+  width: 920px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.production {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin: 10px 10px 0 0;
+}
+
+.production:nth-child(-n + 3) {
+  margin-top: 0;
+}
+.production:nth-child(3n) {
+  margin-right: 0;
+}
+
+.bg-1 {
+  background-image: url(img/sketch.jpg);
+}
+.bg-2 {
+  background-image: url(img/websuku.png);
+}
+.bg-3 {
+  background-image: url(img/write.jpg);
+}
+.bg-4 {
+  background-image: url(img/webcamp.png);
+}
+.bg-5 {
+  background-image: url(img/talk.jpg);
+}
+.bg-6 {
+  background-image: url(img/webcamp-mother.png);
+}
+
+/* Section Feature */
+
+#feature {
+  background-size: cover;
+  background-position: center;
+}
+
+.strength-group {
+  width: 980px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.strength:last-child {
+  margin-right: 0;
+}
+
+.strength {
+  width: 320px;
+  text-align: center;
+  float: left;
+  margin-right: 10px;
+  font-size: 60px;
+}
+
+i.fas {
+  -webkit-text-stroke: 5px #fff;
+}
+
+.strength-title {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.strength-text {
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Section Profile */
+
+#profile {
+  background-color: #eceff1;
+}
+
+.profile-group {
+  padding: 30px 0 90px 0;
+  display: flex;
+}
+
+.leht-content {
+  width: 50%;
+}
+
+.my-face {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(img/my-icon.jpg);
+}
+
+.right-content {
+  width: 50%;
+}
+
+.discription-title:first-child {
+  margin-top: 0;
+}
+
+.discription-title {
+  font-size: 20px;
+  margin: 20px 0 5px 0;
+}
+
+.discription-text {
+  font-size: 16px;
+}
+
+/* Section Contact */
+
+.contact-group {
+  width: 800px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+  display: flex;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.left-contact-content {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.right-content {
+  width: 50%;
+}
+
+.right-contact-content {
+  width: 170px;
+  margin: 0 auto;
+}
+
+.right-contact-content .fab:last-child {
+  margin-right: 0;
+}
+
+.right-contact-content .fab {
+  margin-right: 20px;
+  font-size: 45px;
+}
+
+.discription-title:first-child {
+  margin-top: 0;
+}
+
+.discription-title {
+  margin: 20px 0 5px 0;
+  font-size: 20px;
+}
+
+.link-text {
+  color: #212121;
+  text-decoration: underline;
+}
+
+/* フッター部分 */
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: #ec715f;
+  line-height: 60px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #fafafa;
+  text-align: center;
+}
+
+/* レスポンシブ対応 (767px以下) */
+
+@media (max-width: 768px) {
+  /* ヘッダー部分 */
+  header {
+    height: 50px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .logo {
+    float: none;
+    height: 50px;
+  }
+
+  .menu-box {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #fafafa;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  .nav {
+    float: none;
+  }
+
+  .nav-list {
+    display: none;
+    float: none;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  /* メインビジュアル部分 */
+  #mv {
+    background-image: url(img/code.png);
+  }
+
+  .mv-title {
+    font-size: 40px;
+  }
+
+  .mv-text {
+    font-size: 18px;
+  }
+  /* Section Portfolio */
+  #portfolio {
+    padding: 0 5%;
+  }
+
+  .production-group {
+    width: 300px;
+  }
+
+  .sp-none {
+    display: none;
+  }
+
+  .bg-2,
+  .bg-4 {
+    margin: 10px 0 0 0;
+  }
+  /* Section Feature */
+  #feature {
+    padding: 0 5%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .strength-group {
+    width: 320px;
+  }
+
+  .strength:first-child {
+    margin-top: 0;
+  }
+
+  .strength {
+    margin-top: 10px;
+    float: none;
+  }
+  /* Section Profile */
+  #profile {
+    padding: 0 5%;
+  }
+
+  .profile-group {
+    text-align: center;
+    display: block;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .discription-title:first-child {
+    margin-top: 20px;
+  }
+  /* Section Contact */
+  #contact {
+    padding: 0 5%;
+  }
+
+  .contact-group {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
+  .left-contact-content {
+    width: 100%;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .right-contact-content {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* フッター部分そのまま */
+}
